@@ -9,6 +9,10 @@ Scanner sc = new Scanner(System.in); //System.in An InputStream which is typical
 p = sc.nextInt(); //scan data for input of integer value
 q = sc.nextInt();
 r = p - q;
+
+if (r < 0)
+    r = Math.abs(r);
+
 System.out.println("substraction of entered integers = "+r);
 }
 }
